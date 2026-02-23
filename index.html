@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isadora & Vítor — 27.06.2026</title>
+  <meta name="description" content="Celebre conosco o casamento de Isadora e Vítor. 27 de Junho de 2026, Fazenda Pitangueiras, Sorocaba-SP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Pinyon+Script&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1B2A4A;
+      --white: #FFFFFF;
+      --cream: #FAF8F4;
+      --beige: #F3EDE4;
+      --gold: #BFA36E;
+      --gold-light: #D4C4A0;
+      --text: #1B2A4A;
+      --text-light: #3D506E;
+      --text-muted: #8A96A8;
+      --accent: #C4536A;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ═══════════════════════════════
+       LAYOUT
+    ═══════════════════════════════ */
+    .page {
+      max-width: 520px;
+      margin: 0 auto;
+      background: var(--white);
+      position: relative;
+    }
+
+    @media (min-width: 768px) {
+      body { background: #F0EBE3; }
+      .page {
+        box-shadow: 0 0 80px rgba(0,0,0,0.06);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+    }
+
+    /* ═══════════════════════════════
+       HERO
+    ═══════════════════════════════ */
+    .hero {
+      text-align: center;
+      padding: 2.5rem 2rem 0;
+      position: relative;
+    }
+
+    .hero-monogram {
+      width: 90px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero-names {
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-name {
+      font-family: 'Pinyon Script', cursive;
+      font-size: 3.6rem;
+      color: var(--text);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .hero-phrase {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-light);
+      line-height: 1.9;
+      max-width: 300px;
+      margin: 0.8rem auto 0;
+    }
+
+    .hero-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold-light);
+      margin: 1.5rem auto;
+    }
+
+    /* ═══════════════════════════════
+       VENUE ILLUSTRATION (Hero Image)
+    ═══════════════════════════════ */
+    .venue-illustration {
+      width: 100%;
+      margin: 0 auto;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%),
+                          linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      -webkit-mask-composite: destination-in;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%),
+                  linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-composite: intersect;
+    }
+    .venue-illustration img {
+      width: 100%;
+    }
+
+    /* ═══════════════════════════════
+       DATE BLOCK
+    ═══════════════════════════════ */
+    .date-block {
+      text-align: center;
+      padding: 3rem 2rem 2.5rem;
+    }
+
+    .date-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: 0.45em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .date-time {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .date-venue {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    .date-address {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════
+       POLAROID PHOTO CARDS
+    ═══════════════════════════════ */
+    .polaroid {
+      width: 78%;
+      margin: 2.5rem auto;
+      background: var(--white);
+      padding: 0.7rem 0.7rem 2.2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+      transform: rotate(-1.2deg);
+    }
+    .polaroid:nth-child(even) {
+      transform: rotate(1.5deg);
+    }
+    .polaroid img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: saturate(0.6) brightness(1.04) contrast(0.95);
+    }
+
+    /* ═══════════════════════════════
+       COUNTDOWN
+    ═══════════════════════════════ */
+    .countdown-section {
+      text-align: center;
+      padding: 2.5rem 2rem 3rem;
+    }
+
+    .countdown-heading {
+      font-family: 'Pinyon Script', cursive;
+      font-size: 2.4rem;
+      color: var(--text);
+      margin-bottom: 0.3rem;
+    }
+
+    .countdown-subheading {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .countdown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 0.6rem;
+    }
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 50px;
+    }
+
+    .countdown-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .countdown-label {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 300;
+      margin-top: 0.4rem;
+    }
+
+    .countdown-sep {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      margin: 0 0.1rem;
+      align-self: flex-start;
+      padding-top: 0.2rem;
+    }
+
+    /* ═══════════════════════════════
+       SECTION TITLES
+    ═══════════════════════════════ */
+    .section-title {
+      font-family: 'Pinyon Script', cursive;
+      font-size: 2.8rem;
+      color: var(--text);
+      text-align: center;
+      margin-bottom: 0.3rem;
+    }
+
+    .section-subtitle {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* ═══════════════════════════════
+       DETAILS
+    ═══════════════════════════════ */
+    .details-section {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .details-item {
+      margin-bottom: 2.5rem;
+    }
+    .details-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .details-item-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+      margin-bottom: 0.8rem;
+    }
+
+    .details-item-line {
+      width: 20px;
+      height: 1px;
+      background: var(--gold-light);
+      margin: 0 auto 1rem;
+    }
+
+    .details-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.9;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* ═══════════════════════════════
+       VENUE
+    ═══════════════════════════════ */
+    .venue-section {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .venue-image {
+      width: 100%;
+      margin: 0 auto 1.8rem;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%),
+                          linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      -webkit-mask-composite: destination-in;
+      mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%),
+                  linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-composite: intersect;
+    }
+    .venue-image img {
+      width: 100%;
+    }
+
+    .venue-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .venue-address {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ═══════════════════════════════
+       BUTTONS
+    ═══════════════════════════════ */
+    .btn {
+      display: inline-block;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--navy);
+      padding: 0.9rem 2.8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      border: 1px solid var(--navy);
+    }
+    .btn:hover {
+      background: transparent;
+      color: var(--navy);
+    }
+
+    /* ═══════════════════════════════
+       GIFTS
+    ═══════════════════════════════ */
+    .gifts-section {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--cream);
+    }
+
+    .gifts-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.9;
+      max-width: 340px;
+      margin: 0 auto 2rem;
+    }
+
+    /* ═══════════════════════════════
+       MESSAGE
+    ═══════════════════════════════ */
+    .message-section {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .message-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text-light);
+      line-height: 2;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* ═══════════════════════════════
+       RSVP NOTICE
+    ═══════════════════════════════ */
+    .rsvp-notice {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      background: var(--navy);
+    }
+
+    .rsvp-notice-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .rsvp-notice-line {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 1.2rem;
+      opacity: 0.6;
+    }
+
+    /* ═══════════════════════════════
+       FOOTER
+    ═══════════════════════════════ */
+    .footer {
+      text-align: center;
+      padding: 2.5rem 2rem 3rem;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .footer-monogram {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+    .footer-monogram img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      filter: invert(1) brightness(2);
+      opacity: 0.5;
+    }
+
+    .footer-names {
+      font-family: 'Pinyon Script', cursive;
+      font-size: 1.8rem;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+
+    .footer-date {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      color: rgba(255,255,255,0.5);
+      font-weight: 300;
+    }
+
+    .footer-heart {
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: var(--gold-light);
+    }
+
+    /* ═══════════════════════════════
+       ANIMATIONS
+    ═══════════════════════════════ */
+
+    /* --- Scroll reveal base --- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* --- Staggered children animation --- */
+    .reveal.visible .section-title {
+      animation: fadeSlideUp 0.8s ease both;
+    }
+    .reveal.visible .section-subtitle {
+      animation: fadeSlideUp 0.8s 0.15s ease both;
+    }
+    .reveal.visible .gifts-text,
+    .reveal.visible .message-quote,
+    .reveal.visible .details-item,
+    .reveal.visible .venue-image,
+    .reveal.visible .venue-name,
+    .reveal.visible .venue-address {
+      animation: fadeSlideUp 0.8s 0.3s ease both;
+    }
+    .reveal.visible .btn {
+      animation: fadeSlideUp 0.8s 0.5s ease both;
+    }
+    .reveal.visible .details-item:nth-child(2) { animation-delay: 0.45s; }
+    .reveal.visible .details-item:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Polaroid reveal with rotation --- */
+    .polaroid.reveal {
+      opacity: 0;
+      transform: translateY(50px) rotate(0deg) scale(0.92);
+      transition: opacity 1s ease, transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .polaroid.reveal.visible {
+      opacity: 1;
+      transform: translateY(0) rotate(-1.2deg) scale(1);
+    }
+    .polaroid.reveal.visible:nth-child(even) {
+      transform: translateY(0) rotate(1.5deg) scale(1);
+    }
+    .polaroid.reveal[style*="rotate(-0.8deg)"].visible {
+      transform: translateY(0) rotate(-0.8deg) scale(1);
+    }
+
+    /* --- Hero entrance --- */
+    .hero-enter {
+      opacity: 0;
+      transform: translateY(25px);
+      animation: heroFadeIn 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    }
+    .hero-enter-delay { animation-delay: 0.4s; }
+    .hero-enter-delay-2 { animation-delay: 0.8s; }
+
+    @keyframes heroFadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Floating monogram --- */
+    .hero-monogram {
+      animation: heroFadeIn 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+                 floatGentle 6s ease-in-out 2s infinite;
+    }
+
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* --- Countdown number pulse on update --- */
+    .countdown-number {
+      transition: transform 0.3s ease;
+    }
+    .countdown-number.tick {
+      animation: countTick 0.4s ease;
+    }
+    @keyframes countTick {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+
+    /* --- Button hover glow --- */
+    .btn {
+      transition: all 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(27, 42, 74, 0.25);
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    /* --- Spacer grow animation --- */
+    .spacer {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--beige), transparent);
+      margin: 0 2rem;
+      transform: scaleX(0);
+      transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .spacer.visible {
+      transform: scaleX(1);
+    }
+
+    /* --- Divider line grow --- */
+    .hero-divider {
+      transform-origin: center;
+      animation: heroFadeIn 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+                 lineGrow 1s 1s ease both;
+    }
+    @keyframes lineGrow {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+
+    /* --- Details item lines --- */
+    .reveal.visible .details-item-line {
+      animation: lineGrow 0.8s 0.4s ease both;
+      transform-origin: center;
+    }
+
+    /* --- RSVP notice --- */
+    .rsvp-notice-line {
+      transform-origin: center;
+    }
+    .rsvp-notice.reveal.visible .rsvp-notice-line {
+      animation: lineGrow 0.8s 0.2s ease both;
+    }
+    .rsvp-notice.reveal.visible .rsvp-notice-text {
+      animation: fadeSlideUp 0.8s 0.4s ease both;
+    }
+
+    /* --- Venue illustration parallax feel --- */
+    .venue-illustration {
+      transition: transform 0.6s ease;
+    }
+
+    /* --- Footer fade in --- */
+    .footer {
+      animation: fadeIn 1.5s 0.5s ease both;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <img src="monograma.png" alt="I&V" class="hero-monogram hero-enter">
+
+    <div class="hero-names hero-enter hero-enter-delay">
+      <div class="hero-name">Isadora e Vítor</div>
+    </div>
+
+    <div class="hero-phrase hero-enter hero-enter-delay-2">
+      Temos a honra de convidar você para celebrar a união de nossas vidas.
+    </div>
+
+    <div class="hero-divider hero-enter hero-enter-delay-2"></div>
+  </section>
+
+  <!-- ═══ VENUE ILLUSTRATION ═══ -->
+  <div class="venue-illustration hero-enter hero-enter-delay-2">
+    <img src="foto-entrada.jpg" alt="Fazenda Pitangueiras — aquarela">
+  </div>
+
+  <!-- ═══ DATE ═══ -->
+  <section class="date-block reveal">
+    <div class="date-number">27 . 06 . 2026</div>
+    <div class="date-time">15H30</div>
+    <div class="date-venue">Fazenda Pitangueiras</div>
+    <div class="date-address">
+      Rod. João Leme dos Santos<br>
+      Parque Santa Isabel, Sorocaba — SP
+    </div>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ PHOTO 1 ═══ -->
+  <div class="polaroid reveal" style="transform: rotate(-1.5deg);">
+    <img src="foto.jpg" alt="Isadora e Vítor">
+  </div>
+
+  <!-- ═══ COUNTDOWN ═══ -->
+  <section class="countdown-section reveal">
+    <div class="countdown-heading">Contagem Regressiva</div>
+    <div class="countdown-subheading">para o grande dia</div>
+
+    <div class="countdown" id="countdown">
+      <div class="countdown-unit">
+        <span class="countdown-number" id="months">--</span>
+        <span class="countdown-label">Meses</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="days">--</span>
+        <span class="countdown-label">Dias</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="hours">--</span>
+        <span class="countdown-label">Horas</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="minutes">--</span>
+        <span class="countdown-label">Min</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="seconds" style="color: var(--accent);">--</span>
+        <span class="countdown-label" style="color: var(--accent);">Seg</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PHOTO 2 ═══ -->
+  <div class="polaroid reveal" style="transform: rotate(1.8deg);">
+    <img src="foto2.jpg" alt="Isadora e Vítor" style="object-position: center 30%;">
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ DETAILS ═══ -->
+  <section class="details-section reveal">
+    <div class="section-title">Detalhes</div>
+    <div class="section-subtitle">tudo que você precisa saber</div>
+
+    <div class="details-item">
+      <div class="details-item-title">Cerimônia & Recepção</div>
+      <div class="details-item-line"></div>
+      <div class="details-text">
+        A cerimônia e a festa acontecerão no mesmo local. Teremos jantar, bebidas e muita dança para celebrar esse dia tão especial.
+      </div>
+    </div>
+
+    <div class="details-item">
+      <div class="details-item-title">Traje</div>
+      <div class="details-item-line"></div>
+      <div class="details-text">
+        Esporte Fino<br><br>
+        Tons de azul são reservados exclusivamente para as madrinhas.<br><br>
+        Mulheres, evitem cores nude e branco.<br><br>
+        Homens, evitem ternos em tons claros.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PHOTO 3 ═══ -->
+  <div class="polaroid reveal" style="transform: rotate(-0.8deg);">
+    <img src="foto3.jpg" alt="Isadora e Vítor" style="object-position: center 25%;">
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ GIFTS ═══ -->
+  <section class="gifts-section reveal">
+    <div class="section-title">Lista de Presentes</div>
+    <div class="section-subtitle">sua presença é o maior presente</div>
+    <div class="gifts-text">
+      A sua presença é o nosso maior presente. Mas se desejar nos presentear, preparamos uma lista com muito carinho.
+    </div>
+    <a href="https://sites.icasei.com.br/isaevitor2026/" target="_blank" rel="noopener" class="btn">
+      Ver Lista
+    </a>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ VENUE ═══ -->
+  <section class="venue-section reveal">
+    <div class="section-title">Local</div>
+    <div class="section-subtitle">onde tudo vai acontecer</div>
+
+    <div class="venue-image">
+      <img src="foto-pisci.jpg" alt="Fazenda Pitangueiras — piscina">
+    </div>
+    <div class="venue-name">Fazenda Pitangueiras</div>
+    <div class="venue-address">
+      Rod. João Leme dos Santos<br>
+      Parque Santa Isabel<br>
+      Sorocaba — SP
+    </div>
+    <a href="https://maps.google.com/?q=Fazenda+Pitangueiras+Sorocaba+SP" target="_blank" rel="noopener" class="btn">
+      Como Chegar
+    </a>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- ═══ MESSAGE ═══ -->
+  <section class="message-section reveal">
+    <div class="section-title" style="margin-bottom: 1.5rem;">Com Carinho</div>
+    <div class="message-quote">
+      Com o coração transbordando de alegria, convidamos você a celebrar conosco o início da nossa vida juntos. Sua presença tornará este dia ainda mais inesquecível.
+    </div>
+  </section>
+
+  <!-- ═══ RSVP NOTICE ═══ -->
+  <section class="rsvp-notice reveal">
+    <div class="rsvp-notice-line"></div>
+    <div class="rsvp-notice-text">
+      Nossa cerimonialista entrará em contato para confirmar sua presença!
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-monogram">
+      <img src="monograma.png" alt="I&V">
+    </div>
+    <div class="footer-names">Isadora & Vítor</div>
+    <div class="footer-date">27 · 06 · 2026</div>
+    <div class="footer-heart">&#9829;</div>
+  </footer>
+
+</div>
+
+<script>
+  // Countdown with months
+  const weddingDate = new Date('2026-06-27T15:30:00-03:00');
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = weddingDate - now;
+    if (diff <= 0) {
+      document.getElementById('months').textContent = '0';
+      document.getElementById('days').textContent = '0';
+      document.getElementById('hours').textContent = '00';
+      document.getElementById('minutes').textContent = '00';
+      document.getElementById('seconds').textContent = '00';
+      return;
+    }
+
+    // Calculate months and remaining days
+    let months = (weddingDate.getFullYear() - now.getFullYear()) * 12
+                 + (weddingDate.getMonth() - now.getMonth());
+
+    // Create a date that is "months" months ahead from now
+    const tempDate = new Date(now);
+    tempDate.setMonth(tempDate.getMonth() + months);
+
+    // If tempDate is past the wedding date, subtract one month
+    if (tempDate > weddingDate) {
+      months--;
+      tempDate.setMonth(tempDate.getMonth() - 1);
+    }
+
+    const remainingMs = weddingDate - tempDate;
+    const d = Math.floor(remainingMs / 86400000);
+    const h = Math.floor((remainingMs % 86400000) / 3600000);
+    const m = Math.floor((remainingMs % 3600000) / 60000);
+    const s = Math.floor((remainingMs % 60000) / 1000);
+
+    document.getElementById('months').textContent = months;
+    document.getElementById('days').textContent = d;
+    document.getElementById('hours').textContent = String(h).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Countdown tick animation on seconds
+  let lastSecond = -1;
+  const secEl = document.getElementById('seconds');
+  const origUpdate = updateCountdown;
+  updateCountdown = function() {
+    const prev = secEl ? secEl.textContent : '';
+    origUpdate();
+    const curr = secEl ? secEl.textContent : '';
+    if (prev !== curr && secEl) {
+      secEl.classList.remove('tick');
+      void secEl.offsetWidth; // reflow
+      secEl.classList.add('tick');
+    }
+  };
+
+  // Scroll reveal (sections + spacers)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .spacer').forEach(el => observer.observe(el));
+
+  // Subtle parallax on scroll for venue illustrations
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        document.querySelectorAll('.venue-illustration, .venue-image').forEach(el => {
+          const rect = el.getBoundingClientRect();
+          const center = rect.top + rect.height / 2;
+          const viewCenter = window.innerHeight / 2;
+          const offset = (center - viewCenter) * 0.04;
+          el.style.transform = `translateY(${offset}px)`;
+        });
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>
+
+</body>
+</html>
